@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1e1e2f;
+    padding:20px 50px;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:gold;
+}
+
+/* Hero Section */
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:60px;
+    color:white;
+}
+
+.hero p{
+    font-size:22px;
+    color:white;
+    margin:20px 0;
+}
+
+.buttons button{
+    padding:15px 30px;
+    margin:10px;
+    border:none;
+    border-radius:8px;
+    background:#1e1e2f;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.buttons button:hover{
+    background:gold;
+    color:black;
+}
+/* Tournament Section */
+
+.tournaments{
+    padding:80px 50px;
+    background:#f4f4f4;
+}
+
+.tournaments h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#1e1e2f;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#1e1e2f;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    margin-bottom:20px;
+}
+
+.card button{
+    background:#1e1e2f;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:gold;
+    color:black;
+}
+
+/* Features Section */
+
+.features{
+    padding:80px 50px;
+    background:#1e1e2f;
+}
+
+.features h2{
+    text-align:center;
+    color:white;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.feature-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.feature{
+    width:300px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:scale(1.05);
+}
+
+.feature h3{
+    margin-bottom:15px;
+    color:#1e1e2f;
+}
+
+.feature p{
+    color:#555;
+}
