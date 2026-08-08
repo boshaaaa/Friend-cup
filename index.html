@@ -2,98 +2,210 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Friend Cup</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
 </head>
+
 
 <body>
 
-    <header>
-        <nav class="navbar">
 
-            <div class="logo">
-                Friend Cup 🏆
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            🏆 Friend Cup
+
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+
+                🏠 Home
+
+            </a>
+
+
+            <a href="pages/tournaments.html">
+
+                🏆 Tournaments
+
+            </a>
+
+
+            <a href="#players">
+
+                👥 Players
+
+            </a>
+
+
+            <!-- Login / User -->
+
+            <div id="authArea">
+
+                <a href="pages/login.html">
+
+                    🔐 Login
+
+                </a>
+
             </div>
 
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tournaments</a></li>
-                <li><a href="#">Players</a></li>
-                <li><a href="#">Results</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-
-        </nav>
-    </header>
-
-    <section class="hero">
-
-        <h1>Welcome to Friend Cup</h1>
-
-        <p>Create tournaments and compete with your friends.</p>
-
-        <div class="buttons">
-            <button>Create Tournament</button>
-            <button>View Tournaments</button>
         </div>
 
-    </section>
-    <section class="tournaments">
+    </nav>
 
-    <h2>🏆 Featured Tournaments</h2>
 
-    <div class="cards">
 
-        <div class="card">
-            <h3>League of Legends</h3>
-            <p>Players: 8 / 16</p>
-            <button>Join Tournament</button>
-        </div>
+    <!-- Hero Section -->
 
-        <div class="card">
-            <h3>Valorant</h3>
-            <p>Players: 12 / 16</p>
-            <button>Join Tournament</button>
-        </div>
+    <main>
 
-        <div class="card">
-            <h3>FC 26</h3>
-            <p>Players: 6 / 8</p>
-            <button>Join Tournament</button>
-        </div>
+        <section class="hero">
 
-    </div>
+            <h1>
 
-</section>
-<section class="features">
+                Welcome To Friend Cup 🏆
 
-    <h2>Why Choose Friend Cup?</h2>
+            </h1>
 
-    <div class="feature-box">
 
-        <div class="feature">
-            <h3>🏆 Easy Tournaments</h3>
-            <p>Create tournaments in seconds.</p>
-        </div>
+            <p>
 
-        <div class="feature">
-            <h3>👥 Invite Friends</h3>
-            <p>Invite your friends and compete together.</p>
-        </div>
+                Create tournaments and challenge
+                your friends.
 
-        <div class="feature">
-            <h3>🥇 Live Results</h3>
-            <p>Track winners and match results instantly.</p>
-        </div>
+            </p>
 
-    </div>
 
-</section>
+            <button
+                onclick="location.href='#createTournament'"
+            >
+
+                Create Tournament
+
+            </button>
+
+        </section>
+
+
+
+        <!-- Create Tournament -->
+
+        <section
+            id="createTournament"
+            class="createSection"
+        >
+
+            <h2>
+
+                Create Tournament
+
+            </h2>
+
+
+            <form id="tournamentForm">
+
+
+                <input
+                    type="text"
+                    id="tournamentName"
+                    placeholder="Tournament Name"
+                    required
+                >
+
+
+                <input
+                    type="text"
+                    id="gameName"
+                    placeholder="Game Name"
+                    required
+                >
+
+
+                <input
+                    type="number"
+                    id="players"
+                    placeholder="Players Limit"
+                    min="4"
+                    required
+                >
+
+
+                <button type="submit">
+
+                    Create
+
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- Created Tournaments -->
+
+        <section
+            id="tournaments"
+            class="createdTournaments"
+        >
+
+            <h2>
+
+                🏆 Created Tournaments
+
+            </h2>
+
+
+            <div id="tournamentList"></div>
+
+        </section>
+
+
+        <!-- Players -->
+
+        <section id="players">
+
+            <h2>
+
+                👥 Players
+
+            </h2>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Existing Tournament Script -->
 
     <script src="script.js"></script>
+
+
+    <!-- Authentication Script -->
+
+    <script src="userAuth.js"></script>
 
 </body>
 
